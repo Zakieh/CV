@@ -1,0 +1,55 @@
+\begin{thebibliography}{1}
+
+\bibitem{Hashemifar_AR19}
+Z.~S. Hashemifar, K.~Lee, N.~Napp, and K.~Dantu.
+\newblock Consistent cuboid detection for semantic mapping.
+\newblock {\em Autonomous Robots}.
+\newblock To be submitted.
+
+\bibitem{Hashemifar_2019}
+Z.~S. Hashemifar, C.~Adhivarahan, , and K.~Dantu.
+\newblock Augmenting visual slam with wi-fi sensing for indoor applications.
+\newblock {\em Autonomous Robots}.
+\newblock Submitted.
+
+\bibitem{Hashemifar_IROS}
+Z.~S. Hashemifar, , and K.~Dantu.
+\newblock Practical persistence reasoning in visual slam.
+\newblock In {\em IEEE/RSJ International Conference on Intelligent Robots and
+  Systems}, 2019.
+\newblock Submitted.
+
+\bibitem{Hashemifar:2018:GMS:3215525.3215531}
+Zakieh Hashemifar, Kyung~Won Lee, Nils Napp, and Karthik Dantu.
+\newblock Geometric mapping for sustained indoor autonomy.
+\newblock In {\em Proceedings of the 1st International Workshop on Internet of
+  People, Assistive Robots and Things}, IoPARTS'18, pages 19--24, New York, NY,
+  USA, 2018. ACM.
+
+\bibitem{7944826}
+Z.~S. Hashemifar, C.~Adhivarahan, and K.~Dantu.
+\newblock Poster abstract: Improving rgb-d slam using wi-fi.
+\newblock In {\em 2017 16th ACM/IEEE International Conference on Information
+  Processing in Sensor Networks (IPSN)}, pages 317--318, April 2017.
+
+\bibitem{Cuboid_ICSC}
+Z.~S. Hashemifar, K.~W. Lee, N.~Napp, and K.~Dantu.
+\newblock Consistent cuboid detection for semantic mapping.
+\newblock In {\em 2017 IEEE 11th International Conference on Semantic Computing
+  (ICSC)}, pages 526--531, Jan 2017.
+
+\bibitem{Mahyar_ICASSP13}
+H.~Mahyar, H.R. Rabiee, and Z.S. Hashemifar.
+\newblock {UCS-NT}: An unbiased compressive sensing framework for network
+  tomography.
+\newblock In {\em Acoustics, Speech and Signal Processing (ICASSP), 2013 IEEE
+  International Conference on}, pages 4534--4538, May 2013.
+
+\bibitem{Mahyar_CISS13}
+H.~Mahyar, H.R. Rabieey, Z.S. Hashemifar, and P.~Siyari.
+\newblock {UCS-WN}: An unbiased compressive sensing framework for weighted
+  networks.
+\newblock In {\em Information Sciences and Systems (CISS), 2013 47th Annual
+  Conference on}, pages 1--6, March 2013.
+
+\end{thebibliography}

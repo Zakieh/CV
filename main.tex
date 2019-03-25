@@ -1,0 +1,277 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[10pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{banking}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{black}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+%\usepackage[sorting=none]{biblatex}
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+\usepackage[affil-it]{authblk} 
+
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{\large Zakieh S.}{\large Hshemifar}
+%\title{Resumé title}                               % optional, remove / comment the line if not wanted
+\address{University at Buffalo, State University of New York}{}{}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{+1~(716)~429~5013}                   % optional, remove / comment the line if not wanted
+%\phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{zakiehsa@buffalo.edu}                               % optional, remove / comment the line if not wanted
+%\homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+%\vspace{-50pt}
+
+\makecvtitle
+\vspace{-25pt}
+\section{Interests}
+\cvitem{}{Simultaneous Localization and Mapping, Perception and Manipulation, Multi-Robots Applications}
+\section{Technical Skills}
+\cvitem{OS}{Linux, Windows, ROS (Robotic Operating System)}
+\cvitem{Programming Languages}{C++ (proficient), Matlab, Python, PHP, Java, HTML, C, C\#}
+\cvitem{Software}{OPNET, Visual Studio, SQL Server, Latex, Adobe Flash}
+
+\section{Education}
+\cventry{2014--present}{University at Buffalo, State University of New York}{Ph.D. Candidate, Computer Science}{GPA: \textit{3.88/4}}{}{}  % arguments 3 to 6 can be left empty
+\cventry{2011--2013}{Sharif University of Technology}{Master of Science, Information Technology Engineering}{GPA: \textit{18.25/20}}{}{}
+\cventry{2005--2010}{Tehran University}{Bachelor of Science, Information Technology Engineering}{GPA: \textit{16/20}}{}{}
+
+\section{Working Experience}
+%\subsection{Vocational}
+\cventry{2014--Present}{}{Research Assistant, University at Buffalo}{Dr. Karthik Dantu}{}{
+\textbf{Reasoning about Object Permanence in Mapping (Current work):} 
+\begin{itemize}
+\item Assign permanence probabilities to sensed elements within environment
+\item Employ estimated permanence probabilities for weighing feature correspondences %better handling of feature correspondences
+\item Increase the accuracy of loop closures in SLAM for dynamic environments
+%In our recent work, we are trying to estimate a permanence probability for objects within an environment and the geometrical relations among them. In semi-static environments, there are many objects which have random movements over time. 
+%We conjecture that we can detect these changes over time and use them for increasing the accuracy of loop closures and SLAM algorithms.
+%So loop closure detection will not only incorporate the number of similar features between two places, but also care about which features are available and weigh them based on their permanence probability.
+\end{itemize} 
+\textbf{Wi-Fi Sensing Fusion for more Accurate Mapping and Localization (SLAM):} 
+\begin{itemize}
+\item Implemented a general approach for Wi-Fi sensing fusion into any visual SLAM algorithm
+\item Incorporated Wi-Fi sensing into three well-known visual SLAM algorithms including ORB-SLAM, RTAB-Map and RGBD-SLAM%better handling of feature correspondences
+\item Increased the localization/mapping accuracy of augmented algorithms
+\item Decreased the computation time of loop closure detections
+\item The uniqueness lies in the generality of the approach and no requirement of training phase 
+%In our recent work, we are trying to estimate a permanence probability for objects within an environment and the geometrical relations among them. In semi-static environments, there are many objects which have random movements over time. 
+%We conjecture that we can detect these changes over time and use them for increasing the accuracy of loop closures and SLAM algorithms.
+%So loop closure detection will not only incorporate the number of similar features between two places, but also care about which features are available and weigh them based on their permanence probability.
+\end{itemize}
+\textbf{Geometric Mapping of Indoor Environments for Autonomous Robots:}
+\begin{itemize}
+\item Implemented a consistent cuboid detection approach for attributing cubes to objects
+\item Employed detected cubes for constructing a small sized map%better handling of feature correspondences
+\item Applied the constructed map in SLAM applications
+\item Decreased the map size more than 40\% compared to state of the art visual SLAM algorithms
+%\item The application of geometric representation for mapping had not been explored before
+%In our recent work, we are trying to estimate a permanence probability for objects within an environment and the geometrical relations among them. In semi-static environments, there are many objects which have random movements over time. 
+%We conjecture that we can detect these changes over time and use them for increasing the accuracy of loop closures and SLAM algorithms.
+%So loop closure detection will not only incorporate the number of similar features between two places, but also care about which features are available and weigh them based on their permanence probability.
+\end{itemize}}
+%\cventry{2016--2018}{Wi-Fi Sensing Fusion for more Accurate Mapping and Localization (SLAM)}{Research Assistant, University at Buffalo}{Dr. Karthik Dantu}{}{Worked on using Wi-Fi sensing for more accurate mapping/localization in indoor environments.
+%Most of the current works in SLAM use RGB-D cameras and visual features for sensing. This approach would not work well in feature-less or symmetric environments. 
+%On the other hand, most of the indoor environments are equipped with Wi-Fi routers. 
+%So we employed Wi-Fi sensing for resolving some of the current problems in visual SLAM including perceptual aliasing and high computational complexity.}
+\cventry{2016}{Distributed Mapping of a Tunnel with Limited Communication}{Internship, Near Earth Autonomy}{Bradley Hamner}{}{
+\begin{itemize}
+\item Applied corner detection and Delaunay triangulation for intersection detection
+\item Employed intersections as landmarks and their center position and patterns as corresponding descriptors
+\item Applied covariance intersection for merging received information for the same landmark
+\item Implemented distributed mapping for two UAVs only sharing landmarks information  
+\end{itemize}} 
+%In this work, UAVs estimate the transformation among their initial coordinate frames using feature detection and matching.
+%Then while moving, each UAV figures out the center position and the pattern of traversed intersections in its own 2D map using corner detection and Delaunay triangulation.
+%The intersections are used as landmarks and UAVs communicate them with each other without any transmission of their poses. 
+%Each UAV makes its own graph and incorporates all the information within it.}  
+%\cventry{2014--2016}{Efficient Mapping of Indoor Environments for Autonomous Robots}{Research Assistant, University at Buffalo}{Dr. Karthik Dantu}{}{
+%In this work, we focused on constructing a small and representative map of the environment for autonomous navigation in indoor environments using RGB-D sensors such as Kinect. 
+%The main challenge herein is building long-term consistent maps in these cluttered and dynamic environments.
+%In our approach, we worked on fitting intermediate-level geometrical shapes such as cubes to indoor objects and use them for landmark representation.}%
+%\cventry{2013}{}{Editor, Mahan Institute}{Tehran, Iran}{}{}
+\cventry{2012--2013}{Compressive Sensing Application for Failure Detection in Complex Networks}{Research Assistant, Sharif University of Technology}{Prof. Hamidreza R. Rabiee}{}{\begin{itemize}
+\item Designed and implemented a deterministic algorithm for measurement matrix construction
+\item Employed the measurement matrix for recovery of sparse features of complex networks
+%\item Applied covariance intersection for merging received information for the same landmark
+%\item Implemented distributed mapping for two UAVs only sharing landmarks information  
+\end{itemize}}%Worked on applying Compressive Sensing in complex networks for recovery of sparse features. Designed and
+%simulated a deterministic algorithm in Matlab for accurately recovering the sparse features such as failed links of network when applying Compressive Sensing.}%
+\cventry{2009--2011}{Group Modeling and Representation in Learning Management Systems}{Research Assistant, Tehran University}{Dr. Fattaneh Taghiyare}{}{
+\begin{itemize}
+\item Designed an informative representation for showing learning progress of student groups
+\item Implemented the Group Modeling plug-in in Moodle; an open source learning platform
+%\item Applied covariance intersection for merging received information for the same landmark
+%\item Implemented distributed mapping for two UAVs only sharing landmarks information  
+\end{itemize}}%Worked on an informative representation of student groups in Learning Management Systems. using php which could provide a measurement and graphical model of learning progress}
+%\cventry{2007--2008}{Internship}{ITRC: Research Institute for Information and Communication Technology, Tehran, Iran}{}{}{HCI: Human Computer Interaction}
+
+%\section{Master thesis}
+%\cvitem{title}{\emph{Title}}
+%\cvitem{supervisors}{Supervisors}
+%\cvitem{description}{Short thesis abstract}
+\section{Honors and Awards}
+\cvitem{2016}{Awarded scholarship for Grace Hopper Celebration attendance from ACM (Association for Computing Machinery)}
+\cvitem{2014}{Awarded Dean's Fellowship in University at Buffalo}
+\cvitem{2011}{Ranked $3^{rd}$ among more than 10000 applicants in nationwide university entrance exam for M.Sc. graduate students}
+\cvitem{2010}{Ranked $2^{nd}$ among the students of Information Technology at the Department of Electrical and Computer Engineering, University of Tehran}
+\cvitem{2005}{Ranked $188^{th}$ among more than 400000 applicants in the nationwide university entrance exam for undergraduate students}
+\cvitem{2002}{Awarded in the first stage of National Mathematics Olympiad contest}
+
+%Detailed achievements:%
+%\begin{itemize}%
+%\item Achievement 1;
+%\item Achievement 2, with sub-achievements:
+%  \begin{itemize}%
+%  \item Sub-achievement (a);
+%  \item Sub-achievement (b), with sub-sub-achievements (don't do this!);
+%    \begin{itemize}
+%    \item Sub-sub-achievement i;
+%    \item Sub-sub-achievement ii;
+%    \item Sub-sub-achievement iii;
+%    \end{itemize}
+%  \item Sub-achievement (c);
+%  \end{itemize}
+%\item Achievement 3.
+%\end{itemize}}
+%
+\section{Teaching Experience}
+%\subsection{Vocational}
+\cventry{2014-2015}{Robotics algorithms, Data Structures}{Teaching Assistant}{University at Buffalo}{}{}%
+%\cventry{2014(Fall)}{University at Buffalo}{Teaching Assistant}{Data Structures}{}{}%
+\cventry{2012-2013}{Multimedia networks, Computer Networks Laboratory}{Teaching Assistant}{Sharif University of Technology}{}{}%
+\cventry{2013}{C++ Basic and Advanced Programming}{Tutor}{Tehran, Iran}{}{}%
+%\cventry{2013}{Tehran, Iran}{Tutor}{C++ Basic Programming}{}{}%
+%\cventry{2012(Fall)}{Sharif University of Technology}{Teaching Assistant}{}{}{}%
+\cventry{2006}{Fundamental of Computer and Programming (C++)}{Teaching Assistant}{University of Tehran}{}{}%
+%\cventry{2006(Spring)}{University of Tehran, ECE Department}{Teaching Assistant}{Fundamental of Computer and Programming (C++)}{}{}%
+\nocite{*}
+\bibliographystyle{unsrt}
+\bibliography{publications}
+
+\section{Course Projects}
+%\subsection{Vocational}
+\cventry{2016(Spring)}{University at Buffalo}{Distributed Systems}{Dr. Steve Ko}{}{Implemented a distributed group messenger and distributed file server for android with failure handling}
+\cventry{2015(Spring)}{University at Buffalo}{Machine Learning}{Dr. Varun Chandola}{}{Implemented Neural Networks for behavior learning using Python and Numpy}
+\cventry{2014(Fall)}{University at Buffalo}{Information Retrieval}{Dr. Jianqiang Wang}{}{Implemented personalized News search engine for parsing and indexing documents using Java}%
+\section{References}
+%\subsection{Vocational}
+\cventry{}{Assistant Professor, Computer Science and Engineering}{Karthik Dantu}{University at Buffalo}{}{Email: kdantu@buffalo.edu}
+\cventry{}{Assistant Professor, Computer Science and Engineering}{Nils Napp}{University at Buffalo}{}{Email: nnapp@buffalo.edu}
+\cventry{}{Principal Systems Engineer}{Bradley Hamner}{Near Earth Autonomy}{}{Email: bradley.hamner@nearearth.aero}
+
+%\cventry{2012(Spring)}{Sharif University of Technology}{Multimedia Networking}{Prof. Hamid R. Rabiee}{}{Implementation of network topology for performance analysis and QoS provision considering bandwidth, delay constraints and service requirements using OPNET Modeler Suite}
+%\cventry{2011(Fall)}{Sharif University of Technology}{Computer Performance Evaluation}{Prof. Ali Movaghar}{}{Modeling and Simulating a queuing system and analyzing the drop and block rate of the packets using Mobius and C\#}
+%\cventry{2010(Spring)}{University of Tehran}{Internet Engineering}{Dr. Abbas Nayebi}{}{Designing and implementing an E-Learning application using PHP}{}
+%\cventry{2008(Spring)}{Implementing a synchronizer application over network in Linux}{University of Tehran}{Adviser: Dr. Mehdi Kargahi}{}{Operating System}
+%\cventry{2007(Fall)}{Implementing a graphical Space Invader game in Assembly language under the 8086 architecture}{University of Tehran}{Adviser: Dr. Ahmad Khonsari}{}{Assembly Language}
+%\cventry{2007(Fall)}{Implementing a Java application for organizing advertisements for newspaper}{University of Tehran}{Adviser: Dr. Heshaam Feili}{}{Data Structures}
+%\cventry{2007(Spring)}{Implementing a game over network using pthread and qt3 under the Linux operating system}{University of Tehran}{Adviser: M.Sc. Alireza Abedinejad}{}{Advanced Programming}
+%\cventry{2007)Spring)}{Implementing Tetris game using C++ programming language}{University of Tehran}{Adviser: M.Sc. Alireza Abedinejad}{}{Advanced Programming}
+%\section{Individual Projects}
+%\subsection{Vocational}
+%\cventry{2015(Spring)}{}{Artificial Intelligence for Robotics (Udacity)}{Dr. Sebastian Thrun}{}{Implementing a robotic car using PID controller and Particle Filter in python}
+
+
+%\section{Languages}
+%\cvitemwithcomment{English}{Intermediate}{}
+%\cvitemwithcomment{Farsi}{Native}{}
+%\cvitemwithcomment{Language 3}{Skill level}{Comment}
+
+
+%\section{Publications}
+%\cvitem{}{H .Mahyar, H. R. Rabiee, and Z. S. Hashemifar,”UCS-NT: An unbiased compressive sensing framework for network tomography”, In 38th International Conference on Acoustics, Speech and Signal Processing (ICASSP),
+%Vancouver, Canada, May. 2013.}
+%\cvitem{}{H .Mahyar, H. R. Rabiee, Z. S. Hashemifar, and P. Siyari ,”UCS-WN: An unbiased compressive sensing framework for weighted networks”, In
+%47th Annual Conference on Information Sciences and Systems (CISS),
+%Baltimore, U.S.A, Mar. 2013.}
+%\cvlistitem{Item 2}
+%\cvlistitem{Item 3. This item is particularly long and therefore normally spans over several lines. Did you notice the indentation when the line wraps?}
+
+%\section{Extra 2}
+%\cvlistdoubleitem{Item 1}{Item 4}
+%\cvlistdoubleitem{Item 2}{Item 5\cite{book1}}
+%\cvlistdoubleitem{Item 3}{Item 6. Like item 3 in the single column list before, this item is particularly long to wrap over several lines.}
+
+%\section{References}
+%\begin{cvcolumns}
+%  \cvcolumn{Category 1}{\begin{itemize}\item Person 1\item Person 2\item Person 3\end{itemize}}
+%  \cvcolumn{Category 2}{Amongst others:\begin{itemize}\item Person 1, and\item Person 2\end{itemize}(more upon request)}
+%  \cvcolumn[0.5]{All the rest \& some more}{\textit{That} person, and \textbf{those} also (all available upon request).}
+%\end{cvcolumns}
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+                       % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+%\clearpage
+%-----       letter       ---------------------------------------------------------
+% recipient data
+%\recipient{Company Recruitment team}{Company, Inc.\\123 somestreet\\some city}
+%\date{January 01, 1984}
+%\opening{Dear Sir or Madam,}
+%\closing{Yours faithfully,}
+%\enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+%\makelettertitle
+
+%Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper neque sit amet lectus facilisis sed luctus nisl iaculis. Vivamus at neque arcu, sed tempor quam. Curabitur pharetra tincidunt tincidunt. Morbi volutpat feugiat mauris, quis tempor neque vehicula volutpat. Duis tristique justo vel massa fermentum accumsan. Mauris ante elit, feugiat vestibulum tempor eget, eleifend ac ipsum. Donec scelerisque lobortis ipsum eu vestibulum. Pellentesque vel massa at felis accumsan rhoncus.
+
+%Suspendisse commodo, massa eu congue tincidunt, elit mauris pellentesque orci, cursus tempor odio nisl euismod augue. Aliquam adipiscing nibh ut odio sodales et pulvinar tortor laoreet. Mauris a accumsan ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse vulputate sem vehicula ipsum varius nec tempus dui dapibus. Phasellus et est urna, ut auctor erat. Sed tincidunt odio id odio aliquam mattis. Donec sapien nulla, feugiat eget adipiscing sit amet, lacinia ut dolor. Phasellus tincidunt, leo a fringilla consectetur, felis diam aliquam urna, vitae aliquet lectus orci nec velit. Vivamus dapibus varius blandit.
+
+%Duis sit amet magna ante, at sodales diam. Aenean consectetur porta risus et sagittis. Ut interdum, enim varius pellentesque tincidunt, magna libero sodales tortor, ut fermentum nunc metus a ante. Vivamus odio leo, tincidunt eu luctus ut, sollicitudin sit amet metus. Nunc sed orci lectus. Ut sodales magna sed velit volutpat sit amet pulvinar diam venenatis.
+
+%Albert Einstein discovered that $e=mc^2$ in 1905.
+
+%\[ e=\lim_{n \to \infty} \left(1+\frac{1}{n}\right)^n \]
+
+%\makeletterclosing
+
+%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.
