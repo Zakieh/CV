@@ -27,7 +27,7 @@
 %\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
 % personal data
-\name{\large Zakieh S.}{\large Hshemifar}
+\name{\large Zakieh S.}{\large Hashemifar}
 %\title{Resumé title}                               % optional, remove / comment the line if not wanted
 \address{University at Buffalo, State University of New York}{}{}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
 \phone[mobile]{+1~(716)~429~5013}                   % optional, remove / comment the line if not wanted
@@ -73,11 +73,13 @@
 \section{Working Experience}
 %\subsection{Vocational}
 \cventry{2014--Present}{}{Research Assistant, University at Buffalo}{Dr. Karthik Dantu}{}{
-\textbf{Reasoning about Object Permanence in Mapping (Current work):} 
+\textbf{Practical Reasoning about Feature Persistence in Mapping:} 
 \begin{itemize}
-\item Assign permanence probabilities to sensed elements within environment
-\item Employ estimated permanence probabilities for weighing feature correspondences %better handling of feature correspondences
-\item Increase the accuracy of loop closures in SLAM for dynamic environments
+\item Assigned persistence probabilities to sensed features within environment
+\item Incorporated depth and orientation information of sensed features for improving persistence reasoning %Employ estimated permanence probabilities for weighing feature correspondences %better handling of feature correspondences
+\item Employed the estimated persistence values for improving feature association
+\item Incorporated persistence reasoning into well-known ORB-SLAM algorithm 
+\item Decreased the map size and computation time of ORB-SLAM over long-term runs
 %In our recent work, we are trying to estimate a permanence probability for objects within an environment and the geometrical relations among them. In semi-static environments, there are many objects which have random movements over time. 
 %We conjecture that we can detect these changes over time and use them for increasing the accuracy of loop closures and SLAM algorithms.
 %So loop closure detection will not only incorporate the number of similar features between two places, but also care about which features are available and weigh them based on their permanence probability.
@@ -133,7 +135,7 @@
 %simulated a deterministic algorithm in Matlab for accurately recovering the sparse features such as failed links of network when applying Compressive Sensing.}%
 \cventry{2009--2011}{Group Modeling and Representation in Learning Management Systems}{Research Assistant, Tehran University}{Dr. Fattaneh Taghiyare}{}{
 \begin{itemize}
-\item Designed an informative representation for showing learning progress of student groups
+\item Designed an informative graphical representation for showing learning progress of student groups
 \item Implemented the Group Modeling plug-in in Moodle; an open source learning platform
 %\item Applied covariance intersection for merging received information for the same landmark
 %\item Implemented distributed mapping for two UAVs only sharing landmarks information  
@@ -145,12 +147,13 @@
 %\cvitem{supervisors}{Supervisors}
 %\cvitem{description}{Short thesis abstract}
 \section{Honors and Awards}
-\cvitem{2016}{Awarded scholarship for Grace Hopper Celebration attendance from ACM (Association for Computing Machinery)}
-\cvitem{2014}{Awarded Dean's Fellowship in University at Buffalo}
-\cvitem{2011}{Ranked $3^{rd}$ among more than 10000 applicants in nationwide university entrance exam for M.Sc. graduate students}
-\cvitem{2010}{Ranked $2^{nd}$ among the students of Information Technology at the Department of Electrical and Computer Engineering, University of Tehran}
-\cvitem{2005}{Ranked $188^{th}$ among more than 400000 applicants in the nationwide university entrance exam for undergraduate students}
-\cvitem{2002}{Awarded in the first stage of National Mathematics Olympiad contest}
+\cvitem{2017}{Runner-up, Best Poster at IPSN (International Conference on Information Processing in Sensor Networks)}
+\cvitem{2016}{Scholarship for Grace Hopper Celebration attendance from ACM (Association for Computing Machinery)}
+\cvitem{2014}{Dean's Fellowship in University at Buffalo}
+\cvitem{2011}{$3^{rd}$ Ranking, among more than 10000 applicants in nationwide university entrance exam for M.Sc. graduate students}
+\cvitem{2010}{$2^{nd}$ Ranking, among the students of Information Technology at the Department of Electrical and Computer Engineering, University of Tehran}
+\cvitem{2005}{$188^{th}$ Ranking, among more than 400000 applicants in the nationwide university entrance exam for undergraduate students}
+\cvitem{2002}{Qualified Stage 1 of National Mathematics Olympiad contest}
 
 %Detailed achievements:%
 %\begin{itemize}%
@@ -174,7 +177,7 @@
 \cventry{2014-2015}{Robotics algorithms, Data Structures}{Teaching Assistant}{University at Buffalo}{}{}%
 %\cventry{2014(Fall)}{University at Buffalo}{Teaching Assistant}{Data Structures}{}{}%
 \cventry{2012-2013}{Multimedia networks, Computer Networks Laboratory}{Teaching Assistant}{Sharif University of Technology}{}{}%
-\cventry{2013}{C++ Basic and Advanced Programming}{Tutor}{Tehran, Iran}{}{}%
+\cventry{2013}{C++ Basic and Advanced Programming}{Tutor}{Tehran}{}{}%
 %\cventry{2013}{Tehran, Iran}{Tutor}{C++ Basic Programming}{}{}%
 %\cventry{2012(Fall)}{Sharif University of Technology}{Teaching Assistant}{}{}{}%
 \cventry{2006}{Fundamental of Computer and Programming (C++)}{Teaching Assistant}{University of Tehran}{}{}%
