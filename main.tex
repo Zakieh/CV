@@ -27,14 +27,15 @@
 %\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
 % personal data
-\name{\large Zakieh S.}{\large Hashemifar}
-%\title{Resumé title}                               % optional, remove / comment the line if not wanted
-\address{University at Buffalo, State University of New York}{}{}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\name{\large Zakieh S.}{\large Hashemifar, Ph.D.}
+%\title{Ph.D. Researcher}                               % optional, remove / comment the line if not wanted
+\address{Computer Science, University at Buffalo, State University of NewYork}{}{}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
 \phone[mobile]{+1~(716)~429~5013}                   % optional, remove / comment the line if not wanted
 %\phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
-%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
-\email{zakiehsa@buffalo.edu}                               % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012} 
 \homepage{www.buffalo.edu/\textasciitilde zakiehsa}                         % optional, remove / comment the line if not wanted
+                    % optional, remove / comment the line if not wanted
+\email{zakiehsa@buffalo.edu}                               % optional, remove / comment the line if not wanted
 %\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
 %\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
 %\quote{Some quote}                                 % optional, remove / comment the line if not wanted
@@ -62,19 +63,18 @@
 \cvitem{}{Simultaneous Localization and Mapping, Perception, Sensor Fusion, Multi-Robots Systems}
 \section{Technical Skills}
 \cvitem{OS}{Linux, Windows, ROS (Robotic Operating System)}
-\cvitem{Programming Languages}{C++ (proficient), Matlab, Python, PHP, Java, HTML, C, C\#}
-\cvitem{Software}{OPNET, Visual Studio, SQL Server, Latex, Adobe Flash}
+\cvitem{Programming Languages}{C++, Matlab, Python, PHP, Java, HTML, C, C\#}
+\cvitem{Software}{Gazbeo, Latex, OPNET, Visual Studio, SQL Server, Adobe Flash}
+\cvitem{Algorithm}{Experience programming and modifying packages: Simultaneous Localization and Mapping and Computer Vision}
 
-\section{Education}
-\cventry{2014--present}{University at Buffalo, State University of New York}{Ph.D. Candidate, Computer Science}{GPA: \textit{3.88/4}}{}{}  % arguments 3 to 6 can be left empty
-\cventry{2011--2013}{Sharif University of Technology}{Master of Science, Information Technology Engineering}{GPA: \textit{18.25/20}}{}{}
-\cventry{2005--2010}{Tehran University}{Bachelor of Science, Information Technology Engineering}{GPA: \textit{16/20}}{}{}
 
 \section{Working Experience}
 %\subsection{Vocational}
-\cventry{2014--Present}{}{Research Assistant, University at Buffalo}{Dr. Karthik Dantu}{}{
-\textbf{Practical Reasoning about Feature Persistence in Mapping:} 
+\cventry{2014--Present}{Vision and Wi-Fi Processing, Sensor Fusion, SLAM and Mapping}{Ph.D. Researcher, University at Buffalo}{Dr. Karthik Dantu}{}{
+%\vspace{2ex}
+\hspace{5ex}\textbf{Semi-Static Environment Mapping:} 
 \begin{itemize}
+\addtolength{\itemindent}{0.9cm}
 \item Assigned persistence probabilities to sensed features within environment
 \item Incorporated depth and orientation information of sensed features for improving persistence reasoning %Employ estimated permanence probabilities for weighing feature correspondences %better handling of feature correspondences
 \item Employed the estimated persistence values for improving feature association
@@ -84,19 +84,21 @@
 %We conjecture that we can detect these changes over time and use them for increasing the accuracy of loop closures and SLAM algorithms.
 %So loop closure detection will not only incorporate the number of similar features between two places, but also care about which features are available and weigh them based on their permanence probability.
 \end{itemize} 
-\textbf{Wi-Fi Sensing Fusion for more Accurate Mapping and Localization (SLAM):} 
+\hspace{5ex}\textbf{Wi-Fi Sensing Fusion into Visual SLAM:} 
 \begin{itemize}
+	\addtolength{\itemindent}{0.9cm}
 \item Implemented a general approach for Wi-Fi sensing fusion into any visual SLAM algorithm
-\item Incorporated Wi-Fi sensing into three well-known visual SLAM algorithms including ORB-SLAM, RTAB-Map and RGBD-SLAM%better handling of feature correspondences
+\item Incorporated Wi-Fi sensing into visual SLAM algorithms; ORB-SLAM, RTAB-Map and RGBD-SLAM%better handling of feature correspondences
 \item Increased the localization/mapping accuracy of augmented algorithms by 11\% on average
-\item Decreased the computation time by 15\% to 25\% ob average 
+\item Decreased the loop closure detection time by 15\% to 25\% on average 
 \item The uniqueness lies in the generality of the approach and no requirement of training phase 
 %In our recent work, we are trying to estimate a permanence probability for objects within an environment and the geometrical relations among them. In semi-static environments, there are many objects which have random movements over time. 
 %We conjecture that we can detect these changes over time and use them for increasing the accuracy of loop closures and SLAM algorithms.
 %So loop closure detection will not only incorporate the number of similar features between two places, but also care about which features are available and weigh them based on their permanence probability.
 \end{itemize}
-\textbf{Geometric Mapping of Indoor Environments for Autonomous Robots:}
+\hspace{5ex}\textbf{Utilizing Geometric Shapes for Mapping:}
 \begin{itemize}
+	\addtolength{\itemindent}{0.9cm}
 \item Implemented a consistent cuboid detection approach for attributing cubes to objects
 \item Employed detected cubes for constructing a small sized map%better handling of feature correspondences
 \item Applied the constructed map in SLAM applications
@@ -110,8 +112,10 @@
 %Most of the current works in SLAM use RGB-D cameras and visual features for sensing. This approach would not work well in feature-less or symmetric environments. 
 %On the other hand, most of the indoor environments are equipped with Wi-Fi routers. 
 %So we employed Wi-Fi sensing for resolving some of the current problems in visual SLAM including perceptual aliasing and high computational complexity.}
-\cventry{2016}{Distributed Mapping of a Tunnel with Limited Communication}{Internship, Near Earth Autonomy}{Bradley Hamner}{}{
+\cventry{2016}{Distributed Mapping, Lidar Processing}{Internship, Near Earth Autonomy}{Bradley Hamner}{}{
+\hspace{5ex}\textbf{Utilizing Intersections for Mapping through Lidar Processing}
 \begin{itemize}
+\addtolength{\itemindent}{0.9cm}
 \item Applied corner detection and Delaunay triangulation for intersection detection
 \item Employed intersections as landmarks and their center position and patterns as corresponding descriptors
 \item Applied covariance intersection for merging received information for the same landmark
@@ -126,26 +130,37 @@
 %The main challenge herein is building long-term consistent maps in these cluttered and dynamic environments.
 %In our approach, we worked on fitting intermediate-level geometrical shapes such as cubes to indoor objects and use them for landmark representation.}%
 %\cventry{2013}{}{Editor, Mahan Institute}{Tehran, Iran}{}{}
-\cventry{2012--2013}{Compressive Sensing Application for Failure Detection in Complex Networks}{Research Assistant, Sharif University of Technology}{Prof. Hamidreza R. Rabiee}{}{\begin{itemize}
+\cventry{2012--2013}{Compressive Sensing, Graph Processing}{Research Assistant, Sharif University of Technology}{Prof. Hamidreza R. Rabiee}{}{
+\hspace{5ex}\textbf{Utilizing Compressive Sensing for Failure Detection in Complex Networks}
+\begin{itemize}
+\addtolength{\itemindent}{0.9cm}
 \item Designed and implemented a deterministic algorithm for measurement matrix construction
 \item Employed the measurement matrix for recovery of sparse features of complex networks
 %\item Applied covariance intersection for merging received information for the same landmark
 %\item Implemented distributed mapping for two UAVs only sharing landmarks information  
 \end{itemize}}%Worked on applying Compressive Sensing in complex networks for recovery of sparse features. Designed and
 %simulated a deterministic algorithm in Matlab for accurately recovering the sparse features such as failed links of network when applying Compressive Sensing.}%
-\cventry{2009--2011}{Group Modeling and Representation in Learning Management Systems}{Research Assistant, Tehran University}{Dr. Fattaneh Taghiyare}{}{
+\cventry{2009--2011}{Visual Group Modeling}{Research Assistant, Tehran University}{Dr. Fattaneh Taghiyare}{}{
+\hspace{5ex}\textbf{Visualization of Learning Progress of Student Groups}
 \begin{itemize}
+\addtolength{\itemindent}{0.9cm}
 \item Designed an informative graphical representation for showing learning progress of student groups
 \item Implemented the Group Modeling plug-in in Moodle; an open source learning platform
 %\item Applied covariance intersection for merging received information for the same landmark
 %\item Implemented distributed mapping for two UAVs only sharing landmarks information  
-\end{itemize}}%Worked on an informative representation of student groups in Learning Management Systems. using php which could provide a measurement and graphical model of learning progress}
+\end{itemize}}
+%Worked on an informative representation of student groups in Learning Management Systems. using php which could provide a measurement and graphical model of learning progress}
 %\cventry{2007--2008}{Internship}{ITRC: Research Institute for Information and Communication Technology, Tehran, Iran}{}{}{HCI: Human Computer Interaction}
 
 %\section{Master thesis}
 %\cvitem{title}{\emph{Title}}
 %\cvitem{supervisors}{Supervisors}
 %\cvitem{description}{Short thesis abstract}
+\section{Education}
+\cventry{2014--present}{University at Buffalo, State University of New York}{Ph.D. Candidate, Computer Science}{GPA: \textit{3.88/4}}{}{}  % arguments 3 to 6 can be left empty
+\cventry{2011--2013}{Sharif University of Technology}{Master of Science, Information Technology Engineering}{GPA: \textit{18.25/20}}{}{}
+\cventry{2005--2010}{Tehran University}{Bachelor of Science, Information Technology Engineering}{GPA: \textit{16/20}}{}{}
+
 \section{Honors and Awards}
 \cvitem{2017}{Runner-up, Best Poster at IPSN (International Conference on Information Processing in Sensor Networks)}
 \cvitem{2016}{Scholarship for Grace Hopper Celebration attendance from ACM (Association for Computing Machinery)}
